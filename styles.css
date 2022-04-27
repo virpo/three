@@ -1,0 +1,101 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  color: #d8d8d8;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Open Sans", sans-serif;
+  text-align: center;
+
+  background: #f6d87e;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.tile {
+  width: 13vmin;
+  height: 13vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4vmin;
+  border-radius: 0.8vmin;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 7vmin;
+}
+
+.to-place {
+  position: absolute;
+  bottom: 1.6vmin;
+  right: 1.6vmin;
+}
+
+.score-holder {
+  font-size: 2vmin;
+  position: absolute;
+  bottom: 16vmin;
+  right: 2.4vmin;
+  color: black;
+}
+
+.legend {
+  display: flex;
+  position: absolute;
+  top: 1vmin;
+}
+
+.legend__item {
+  width: 4vmin;
+  height: 4vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vmin;
+  border-radius: 0.8vmin;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 0.6vmin;
+  position: relative;
+}
+
+.legend__item::after {
+  position: absolute;
+  content: "→";
+  display: block;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1vmin;
+  right: -1vmin;
+}
+
+.legend__item:last-of-type::after {
+  display: none;
+}
