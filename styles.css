@@ -7,8 +7,7 @@ body {
 
 body {
   color: #d8d8d8;
-  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
-    "Open Sans", sans-serif;
+  font-family: 'Epilogue', sans-serif;
   text-align: center;
 
   background: #f6d87e;
@@ -40,8 +39,8 @@ html {
 }
 
 .tile {
-  width: 13vmin;
-  height: 13vmin;
+  width: min(16vw, 13vh);
+  height: min(16vw, 13vh);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,4 +97,13 @@ html {
 
 .legend__item:last-of-type::after {
   display: none;
+}
+
+.logo {
+  background-image: linear-gradient(90deg, #ff8b38, #74a900);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 32px;
 }
