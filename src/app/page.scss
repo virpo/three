@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+
+}
+
+.cell {
+  margin: 4px;
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  background: #ff8800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
